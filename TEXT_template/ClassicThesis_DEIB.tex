@@ -35,42 +35,46 @@
 %    * See classicthesis-preamble.sty for useful commands
 % ****************************************************************
 
-\documentclass[ twoside, 
-			openright,
-			% letterpaper a4paper
-			titlepage, 
-			numbers=noenddot,
-			headinclude, %1headlines
-            		footinclude=true, 
-			cleardoublepage=empty,
-			abstractoff, % <--- obsolete, remove (todo)
-			BCOR=5mm,
-			paper=a4, 
-			fontsize=11pt, %11pt,
-			]{scrreprt}
+\documentclass[ openright,
+				towside, 
+				a4paper,
+				titlepage, 
+				numbers=noenddot,
+				headinclude, %1headlines
+				footinclude=false, 
+				cleardoublepage=empty,
+				fontsize=11pt, %11pt,
+				]{scrbook}
 
 %*****************************************************************
 % Note: Make all your adjustments in here
 %*****************************************************************
+% general packages import
+\usepackage{booktabs}
+\usepackage{emptypage}
 
 % \usepackage[backref, backend=biber]{biblatex}
 \usepackage[backref,
-		backend=bibtex,
-            	maxbibnames=99,
-            	natbib=true,
-            	firstinits=false,
-            	style=authoryear-comp,
-            	sortcites=false,
-            	doi=false,
-            	url=false]{biblatex}
+		    backend=bibtex,
+            maxbibnames=99,
+            natbib=true,
+            firstinits=false,
+            style=authoryear-comp,
+            sortcites=false,
+            doi=false,
+            url=false
+            ]{biblatex}
+
 \bibliography{Bibliography}	
 
 \input{classicthesis-config}
+
 
 %*****************************************************************
 % Hyphenation
 %*****************************************************************
 \hyphenation{put-here-the-words-latex-cannot-hyphenate}
+
 
 \begin{document}
 

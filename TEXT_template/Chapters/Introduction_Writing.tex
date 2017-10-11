@@ -1,4 +1,4 @@
-\chapter{An introduction to the writing of scientific texts} \label{chap:aChapter}
+\chapter{An introduction to the writing of scientific texts} \chaplabel{aChapter}
 \begin{flushright}{\slshape    
    Science, my boy, is made up of mistakes, but they are mistakes
    which it is useful to make, because they lead little by little
@@ -53,7 +53,7 @@ We assigned the same parameters to the different land use classes in the catchme
 Bullet lists are welcome.
 The items should be ranked following a rationale, for example they can be ranked by importance, preference, priority, etc.
 
-\section{The structure of a scientific text}\label{sec:structure}
+\section{The structure of a scientific text}\seclabel{structure}
 The typical structure is described in the following.
 Nevertheless each thesis may have a different structure which can be customized to better highlight the work done.
 Before writing the entire thesis, you should identify a temptative structure and discuss it with your supervisor (see Section \ref{sec:general_rules}).
@@ -94,7 +94,7 @@ Before writing the entire thesis, you should identify a temptative structure and
 	You can also briefly mention limitations and future works. 
 \end{description}
 
-\section{In-text citations}\label{sec:citations}
+\section{In-text citations}\seclabel{citations}
 Citations usually goes just after the sentence you are quoting or paraphasing using brackets. 
 The most commonly used type of citation is: author, year. 
 When the reference has two or three authors of the source, cite all of them.
@@ -115,7 +115,7 @@ For example:\\
 \blockquote{In the US, the notion of an NWO became popular after the terrorist attacks on the WTC. However, officials in NATO and the WTO rarely refer to an NWO in proceedings relating to the GATT, and it can be said that the MVTO, the MFN clause, and SROs have little to do with an NWO.\footnote{Example taken from \url{http://www.scribendi.com/advice/the_correct_use_of_acronyms.en.html}}}.
 
 Acronyms should be always defined the first time they are used (this may not apply to very popular acronyms, \eg, NASA, IPCC, etc., which may remain undefined).
-If you use the suggested \LaTeX\ environment, \verb!acronyms!, as explained in \mySubsec{subsec:special_env} you can avoid to remember which is the first time you used the acronym.
+If you use the suggested \LaTeX\ environment, \verb!acronyms!, as explained in \subsecref{special_env} you can avoid to remember which is the first time you used the acronym.
 It does that for you.
 For example:\\
 \blockquote{In this thesis we adopt \acf{EMODPS}. \ac{EMODPS} is an approximate dynamic programming method that combines direct policy search and multi-objective evolutionary algorithms.} % I had to use acf because within the \blockquote, acronym is not able to recognize that is the first time i'm using the acronym... nevermind
@@ -134,7 +134,7 @@ Use the text to focus on the important point the reader should draw from them.
 
 Tables/figures should be sequentially numbered as they appear in the text (in other words, Figure 2 can not be cited before Figure 1).
 They should appear close to the text where they are cited first.
-All the figures/tables included in the thesis must be cited somewhere in the text.\footnote{\LaTeX\ is of great help here: for instance, you should not worry about number ordering. Specific code for figures as well as for tables is given in \mySubsec{subsec:special_env}.}
+All the figures/tables included in the thesis must be cited somewhere in the text.\footnote{\LaTeX\ is of great help here: for instance, you should not worry about number ordering. Specific code for figures as well as for tables is given in \subsecref{special_env}.}
 
 Each figure/table should be understood without reference to the text.
 Captions should, then, contain a brief description of the figure's contents, for instance an explanation of the legend (see Figure \ref{fig:boxplot_quality}).

@@ -18,7 +18,7 @@
 % ****************************************************************
 \PassOptionsToPackage{eulerchapternumbers,
 					listings,
-					drafting,
+					%drafting,
 				 	pdfspacing,
 					floatperchapter,
 					%linedheaders,
@@ -49,7 +49,7 @@
 \newcommand{\mySupervisor}{Prof. Vilfredo Pareto\xspace} % relatore
 \newcommand{\myOtherSupervisor}{Dr. Paul Krugman\xspace} % co relatori
 \newcommand{\myOtherOtherSupervisor}{Prof. my ASP supervisor\xspace}
-\newcommand{\myCoExaminer}{Prof. Rodolfo Soncini-Sessa\xspace} % contro-relatore
+%\newcommand{\myCoExaminer}{Prof. Rodolfo Soncini-Sessa\xspace} % contro-relatore
 \newcommand{\myFaculty}{Facolt\`a di Ingegneria\xspace}
 \newcommand{\mySchool}{Scuola di Ingegneria Civile, Ambientale e Territoriale\xspace}
 \newcommand{\myDepartment}{Dipartimento di Elettronica, Informazione e Bioingegneria\xspace}
@@ -75,22 +75,25 @@
 \newcommand{\Ie}{I.\,e.\ }
 \newcommand{\eg}{e.\,g.\ }
 \newcommand{\Eg}{E.\,g.\ }
+
 % referencing commands
-\newcommand{\myEq}[1]{equation \eqref{#1}}
-\newcommand{\MyEq}[1]{Equation \eqref{#1}}
-\newcommand{\myFig}[1]{figure \ref{#1}}
-\newcommand{\MyFig}[1]{Figure \ref{#1}}
-\newcommand{\myTab}[1]{table \ref{#1}}
-\newcommand{\MyTab}[1]{Table \ref{#1}}
-\newcommand{\mySubsec}[1]{subsection \ref{#1}}
-\newcommand{\MySubsec}[1]{Subsection \ref{#1}}
-\newcommand{\mySec}[1]{section \ref{#1}}
-\newcommand{\MySec}[1]{Section \ref{#1}}
-\newcommand{\myChap}[1]{chapter \ref{#1}}
-\newcommand{\MyChap}[1]{Chapter \ref{#1}}
-\newcommand{\myAppendix}[1]{appendix \ref{#1}}
-\newcommand{\MyAppendix}[1]{Appendix \ref{#1}}
-\newcommand{\myEmph}[1]{\textsc{#1}}
+\newcommand{\eqlabel}[1]{\label{eq:#1}}
+\newcommand{\figlabel}[1]{\label{fig:#1}}
+\newcommand{\tablabel}[1]{\label{tab:#1}}
+\newcommand{\subseclabel}[1]{\label{subs:#1}}
+\newcommand{\seclabel}[1]{\label{sec:#1}}
+\newcommand{\chaplabel}[1]{\label{chap:#1}}
+\newcommand{\applabel}[1]{\label{app:#1}}
+\newcommand{\algolabel}[1]{\label{algo:#1}}
+
+\newcommand{\eq}[1]{equation \eqref{#1}}
+\newcommand{\figref}[1]{Figure \ref{fig:#1}}
+\newcommand{\tabref}[1]{Table \ref{tab:#1}}
+\newcommand{\subsecref}[1]{Subsection \ref{subs:#1}}
+\newcommand{\secref}[1]{Section \ref{sec:#1}}
+\newcommand{\chapref}[1]{Chapter \ref{chap:#1}}
+\newcommand{\appref}[1]{Appendix \ref{app:#1}}
+\newcommand{\algoref}[1]{Algorithm \ref{algo:#1}}
 
 % **********************************************************************
 
@@ -294,10 +297,21 @@
     }{\relax}
 \makeatother
 
-% ****************************************************************
-% 7. Last calls before the bar closes
-% ****************************************************************
 
+% ****************************************************************
+% 7. Import template for the document
+% ****************************************************************
 \usepackage{classicthesis} 
+
+% ****************************************************************
+% 8. Include geometry package to make margin of both sides equals
+% ****************************************************************
+\usepackage[top=1.25in,
+            bottom=1.25in,
+            left=1.25in,
+            right=1.25in,
+            heightrounded,
+            ]{geometry}
+
 
 % ****************************************************************
