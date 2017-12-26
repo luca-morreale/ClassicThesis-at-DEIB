@@ -1,0 +1,48 @@
+
+%-------------------------Title------------------------------------------------
+\vspace*{-0.5cm}
+\title[\bottomTitle]{\presentationTitle}
+
+\author[\presentationAuthor]{\Large \presentationAuthor \\[0.5em] \small
+		\begin{tabular}{rl}
+			Advisor:    & \advisor \\
+			Co-Advisor: & \coadvisor \\
+		\end{tabular}
+}
+
+\institute[Polimi]{\vspace*{-1cm}\departement}
+
+\setbeamertemplate{title page}{%
+	\vbox{}
+	%  \vfill
+	\vspace{1.5cm}% NEW
+	\begingroup
+	\centering
+	\begin{beamercolorbox}[sep=8pt,center]{title}
+		\usebeamerfont{title}\inserttitle\par%
+		\ifx\insertsubtitle\@empty%
+		\else%
+		\vskip0.25em%
+		{\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}%
+		\fi%     
+	\end{beamercolorbox}%
+	\vskip1.5em\par
+	\begin{beamercolorbox}[sep=8pt,center]{author}
+		\usebeamerfont{author}\insertauthor
+	\end{beamercolorbox}
+	\begin{beamercolorbox}[sep=8pt,center]{institute}
+		\usebeamerfont{institute}\insertinstitute
+	\end{beamercolorbox}
+	\endgroup
+}
+
+%-------------------------Big logo in title page--------------------------------------------
+%\titlegraphic{\includegraphics[width=3cm]{\biglogo}}
+%\vspace*{1.0cm}
+
+%-------------------------Logo on bottom right side------------------------------------------
+%\pgfdeclareimage[width=0.15\columnwidth]{logoBottomRight}{\bottomRightLogo}
+%\logo{\pgfuseimage{logoBottomRight}}
+
+
+

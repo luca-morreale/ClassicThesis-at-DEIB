@@ -1,0 +1,23 @@
+\usepackage{color}
+
+
+\DefineNamedColor{named}{first-line-bg}{RGB}{0,75,181} % bottom colored line
+%\DefineNamedColor{named}{first-line-color}{white} % bottom colored line
+
+\DefineNamedColor{named}{second-line-bg}{RGB}{136,188,240} % upper bottom line
+%\DefineNamedColor{named}{secondary-line-color}{white} % upper bottom line
+
+
+\mode<presentation>
+\setbeamercolor{alerted text}{fg=green!80!yellow}
+
+\setbeamercolor*{palette primary}{bg=first-line-bg, fg=white}
+\setbeamercolor*{palette secondary}{bg=second-line-bg, fg=white}
+
+\setbeamercolor*{palette tertiary}{bg=first-line-bg, fg=white}
+\setbeamercolor*{palette quaternary}{bg=second-line-bg, fg=white}
+
+\setbeamercolor*{structure}{bg=second-line-bg, fg=first-line-bg}
+
+\setbeamercolor{frametitle}{bg=first-line-bg, fg=white}
+\mode<all>

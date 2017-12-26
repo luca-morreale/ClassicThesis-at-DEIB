@@ -1,0 +1,26 @@
+\setbeamertemplate{headline}{%
+	\leavevmode%
+	\hbox{%
+		\begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1.125ex]{palette primary}
+			\insertsectionnavigationhorizontal{\paperwidth}{}{\hfill}
+		\end{beamercolorbox}
+	
+	}
+}
+\addtobeamertemplate{headline}{}{\textcolor{white}{\rule{\paperwidth}{1pt}}}
+
+\setbeamertemplate{footline} {
+	\leavevmode%
+	\hbox{%
+	  	\begin{beamercolorbox}[wd=.08\paperwidth, ht=2.25ex, dp=1ex, center]{palette secondary}%
+		  	\usebeamerfont{author in head/foot}\insertframenumber/\inserttotalframenumber
+	  	\end{beamercolorbox} 
+		\begin{beamercolorbox}[wd=.7\paperwidth, ht=2.25ex, dp=1ex, center]{palette primary}%
+		    \usebeamerfont{title in head/foot}\insertshorttitle \hspace*{-3em}
+		\end{beamercolorbox} 
+		\begin{beamercolorbox}[wd=.21\paperwidth, ht=2.25ex, dp=1ex, center]{palette secondary}%
+		    \usebeamerfont{author in head/foot}\insertshortauthor
+	    \end{beamercolorbox}
+    }%
+    \vskip0pt%
+}

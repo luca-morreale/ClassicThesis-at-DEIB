@@ -1,0 +1,101 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Based on MIT Beamer Template
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\documentclass{beamer}
+\usepackage{graphicx,url}
+
+\usepackage[utf8]{inputenc}
+\batchmode
+\usepackage{pgfpages}
+% \pgfpagesuselayout{4 on 1}[letterpaper,landscape,border shrink=5mm]
+\usepackage{amsmath,amssymb,enumerate,epsfig,bbm,calc,color,ifthen,capt-of}
+\usetheme{Berlin}
+\usecolortheme{polimi}
+\usepackage{tikz}
+
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+\input{presentation_config}
+
+\input{header_footer}
+
+
+\begin{document}
+	
+	\input{title_frame} 
+	
+	%---Title page without header and footer---------------------------------------
+	\begin{frame}[plain]
+		\begin{tikzpicture}[remember picture,overlay]  
+			\node[xshift=1.8cm,yshift=-1.1cm] at (current page.north west)
+			{\includegraphics[scale=0.5]{\lablogo}};
+			\node[xshift=-1.5cm,yshift=-1.1cm] at (current page.north east)
+			{\includegraphics[scale=0.5]{\biglogo}};
+		\end{tikzpicture}
+		
+		\titlepage
+	\end{frame}
+	%------------------------------------------------------------------------------	
+	
+	% -------Introduction----------------------------------------------------------
+	\section{Introduction}
+	\begin{frame}{Introduction}
+		\vspace{\baselineskip}
+		
+		\begin{overlayarea}{\textwidth}{10cm}
+			\begin{itemize}
+				\item<1-> Present the \textbf{context} of your thesis
+				\begin{itemize}
+					\item<2-> with examples
+				\end{itemize}
+				\item<3-> Present the \textbf{goal} of your thesis
+				\item<4-> Remember to always put \textbf{images}
+			\end{itemize}
+			\begin{figure}[t]
+				\only<1>{
+					\includegraphics[scale=0.4]{images/context}
+				}
+				\only<4>{
+					\begin{tabular}{cc}
+						\includegraphics[scale=0.3]{images/image} &
+						\includegraphics[scale=0.4]{images/list} \\
+						\textbf{Yes} & \textbf{No} \\
+					\end{tabular}
+				}
+				
+			\end{figure}
+		\end{overlayarea} 
+	\end{frame}
+	%------------------------------------------------------------------------------
+
+	
+	%--------Proposed Solution-----------------------------------------------------
+	\section{Proposed Solution}
+	\begin{frame}{Proposed Solution}
+	\end{frame}
+	%------------------------------------------------------------------------------
+	
+	%--------Experiments-----------------------------------------------------------
+	\section{Experiments}
+	\begin{frame}{Experiments}
+	\end{frame}
+	%------------------------------------------------------------------------------
+	
+	%--------Conclusions \& Future Works-------------------------------------------
+	\section{Conclusions \& Future Works}
+	\begin{frame}{Conclusions}	
+	\end{frame}
+	%------------------------------------------------------------------------------
+	
+	%------------------------------------------------------------------------------
+	\begin{frame}{Future Works}	
+	\end{frame}
+	%------------------------------------------------------------------------------
+	
+	
+	% -----------------------------------------------------------------------------
+\end{document}
+%-----------------------------------------------Este comentario nunca aparecera
